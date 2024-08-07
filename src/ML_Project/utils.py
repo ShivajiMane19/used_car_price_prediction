@@ -28,7 +28,7 @@ def read_sql_data():
         logging.info("Connection established...", mydb)
 
         # Now reading the dataset
-        df = pd.read_sql_query("select * from car_price", mydb)
+        df = pd.read_sql_query("select * from used_cars_pricing", mydb)
         print(df.head())
 
         return df
